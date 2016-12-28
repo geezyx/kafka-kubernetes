@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-test
+  namespace: kafka-cluster
+spec:
+  containers:
+    - name: ubuntu
+      image: ubuntu:trusty
+      command: ["/bin/bash","-c"]
+      args: ["sleep 100000"]
